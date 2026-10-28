@@ -1,0 +1,148 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#0b0b0c"><title>Rodrigo Lara — Portfolio</title><meta name="description" content="Portfólio de Rodrigo Lara — direção criativa, design, edição de vídeo e marketing digital."><link rel="preload" href="assets/rodrigo-portrait.webp" as="image" fetchpriority="high"><style>
+
+:root{--bg:#0b0b0c;--fg:#f4f2ec;--muted:#92918d;--line:#28282a;--cream:#e9dfcc;--accent:#ded1bb;--pad:clamp(22px,4.5vw,74px)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--fg);font-family:ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;overflow-x:hidden}a{color:inherit;text-decoration:none}button{font:inherit}.progress{position:fixed;top:0;left:0;width:0;height:2px;background:var(--cream);z-index:1000}.cursor{position:fixed;width:460px;height:460px;border-radius:50%;pointer-events:none;transform:translate(-50%,-50%);background:radial-gradient(circle,rgba(235,225,205,.055),transparent 68%);z-index:0}.site-header{position:fixed;top:0;left:0;right:0;height:72px;z-index:100;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:0 var(--pad);background:rgba(11,11,12,.62);border-bottom:1px solid rgba(255,255,255,.06);backdrop-filter:blur(18px);opacity:0;pointer-events:none;transition:.45s}.site-header.show{opacity:1;pointer-events:auto}.wordmark{font-size:12px;font-weight:650;letter-spacing:.13em}.site-header nav{display:flex;gap:28px}.site-header nav a,.contact-link{font-size:12px;color:#b5b3ae}.contact-link{justify-self:end}.site-header a:hover{color:white}
+.intro-scroll{height:220vh;position:relative}.intro-sticky{height:100vh;position:sticky;top:0;overflow:hidden;display:grid;place-items:center;background:#101011}.portfolio-word{position:absolute;z-index:3;margin:0;font-size:clamp(70px,17vw,285px);line-height:.78;letter-spacing:-.085em;font-weight:750;transform:translate3d(0,0,0) scale(1);transform-origin:center;color:var(--cream);white-space:nowrap;will-change:transform}.portrait{position:absolute;z-index:2;bottom:-7vh;left:50%;width:min(61vw,850px);height:auto;transform:translateX(-50%) translateY(35px) scale(.94);opacity:0;will-change:transform,opacity;filter:saturate(.93) contrast(1.03)}.intro-mini{position:absolute;z-index:4;font-size:11px;letter-spacing:.15em;color:#b9b5ad;opacity:0;transition:.1s}.intro-mini-top{top:8.5vh;left:var(--pad)}.intro-name{position:absolute;z-index:4;bottom:8.5vh;left:var(--pad);font-size:13px;line-height:1.15;color:#d7d1c5;opacity:0}.scroll-hint{position:absolute;z-index:4;bottom:5vh;right:var(--pad);font-size:9px;letter-spacing:.15em;color:#797875;transition:.3s}.scroll-hint span{font-size:17px;margin-left:8px}.intro-sticky.final .scroll-hint{opacity:0}
+.about{padding:140px var(--pad);display:grid;grid-template-columns:1fr 2.3fr;gap:70px;border-bottom:1px solid var(--line)}.about-title>span,.cap-label,.section-heading>span,.experience>div>span,.contact>span{font-size:10px;letter-spacing:.16em;color:#74736f;font-weight:600}.about-title h2{font-size:clamp(46px,7vw,110px);letter-spacing:-.065em;line-height:.9;margin:25px 0 0;font-weight:600}.about-copy{max-width:850px}.lead{font-size:clamp(28px,4vw,58px)!important;letter-spacing:-.045em;line-height:1.04!important;color:white!important;margin-top:0!important}.about-copy p{font-size:18px;line-height:1.65;color:#9e9c97}.skill-chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:36px}.skill-chips span{border:1px solid #343436;padding:9px 13px;border-radius:999px;font-size:11px;color:#aaa8a3}
+.capabilities{padding:120px var(--pad);display:grid;grid-template-columns:1fr 3fr;background:#efede7;color:#111}.cap-label{color:#74716a}.cap-list article{display:grid;grid-template-columns:60px 1.1fr 1fr;gap:25px;padding:30px 0;border-top:1px solid #cbc7bd}.cap-list article:last-child{border-bottom:1px solid #cbc7bd}.cap-list article>span{font-size:10px;color:#777}.cap-list h3{margin:0;font-size:clamp(28px,3.2vw,48px);letter-spacing:-.045em;font-weight:550}.cap-list p{margin:5px 0 0;color:#68655f;line-height:1.55}
+.section,.cases{padding:125px var(--pad)}.section-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:40px;margin-bottom:52px}.section-heading h2{margin:0;text-align:right;font-size:clamp(40px,5.3vw,82px);line-height:1;letter-spacing:-.06em;font-weight:550}.gallery{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}.tile{padding:0;border:0;background:none;color:white;cursor:pointer;position:relative;overflow:hidden}.tile:nth-child(1),.tile:nth-child(6){grid-column:span 7}.tile:nth-child(2),.tile:nth-child(5){grid-column:span 5}.tile:nth-child(3),.tile:nth-child(4),.tile:nth-child(7),.tile:nth-child(8){grid-column:span 3}.tile img{display:block;width:100%;height:100%;min-height:430px;max-height:760px;object-fit:cover;transition:.55s cubic-bezier(.2,.7,.2,1)}.tile span{position:absolute;left:16px;bottom:16px;background:rgba(10,10,11,.78);backdrop-filter:blur(10px);padding:10px 13px;font-size:9px;letter-spacing:.12em;opacity:0;transform:translateY(8px);transition:.3s}.tile:hover img{transform:scale(1.02)}.tile:hover span{opacity:1;transform:none}
+.cases{border-top:1px solid var(--line)}.case{display:grid;grid-template-columns:1fr 2.2fr;gap:55px;padding:75px 0;border-top:1px solid var(--line)}.case-meta{position:sticky;top:105px;height:max-content}.case-meta>span{font-size:9px;color:#6d6c68;letter-spacing:.15em}.case-meta h3{font-size:clamp(31px,3.6vw,58px);line-height:1.03;letter-spacing:-.05em;margin:19px 0 11px;font-weight:550}.case-meta p{color:#aaa8a2;margin:0 0 22px}.case-meta small{color:#666}.slider{overflow:hidden;position:relative}.slides{display:flex;transition:transform .5s cubic-bezier(.2,.7,.2,1)}.slides img{width:100%;flex:0 0 100%;aspect-ratio:4/5;object-fit:contain;background:#131314}.slider-ui{display:flex;align-items:center;justify-content:flex-end;gap:15px;padding-top:15px}.slider-ui button{width:42px;height:42px;border-radius:50%;border:1px solid #414143;background:transparent;color:#eee;cursor:pointer}.slider-ui button:hover{background:#eee;color:#111}.count{font-size:11px;color:#6c6b68}
+.statement{padding:105px var(--pad);border-block:1px solid var(--line);overflow:hidden}.statement p{font-size:clamp(66px,11vw,180px);line-height:.82;letter-spacing:-.08em;font-weight:700;margin:0;white-space:nowrap}.statement .outline{padding-left:10vw;color:transparent;-webkit-text-stroke:1px #676762}
+.video-grid{display:grid;grid-template-columns:.62fr 1.38fr;gap:18px;align-items:start}.video-grid video{display:block;width:100%;background:#111}.reel-card video{aspect-ratio:9/16;object-fit:cover}.youtube-card video{aspect-ratio:16/9;object-fit:cover}.video-info{padding-top:14px}.video-info span{font-size:9px;letter-spacing:.14em;color:#6c6b67}.video-info h3{font-size:22px;letter-spacing:-.025em;margin:6px 0;font-weight:500}
+.experience{padding:125px var(--pad);display:grid;grid-template-columns:1fr 2.3fr;gap:55px;background:#efede7;color:#111}.experience h2{font-size:clamp(42px,5vw,78px);letter-spacing:-.055em;line-height:1;margin:22px 0 0;font-weight:550}.exp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.exp-grid article{min-height:330px;border:1px solid #c8c4ba;padding:25px;display:flex;flex-direction:column}.exp-grid small{font-size:9px;letter-spacing:.14em;color:#777}.exp-grid h3{margin:auto 0 14px;font-size:28px;letter-spacing:-.04em;font-weight:550}.exp-grid p{color:#69665f;line-height:1.55;margin:0;font-size:14px}
+.contact{padding:130px var(--pad)}.contact>p{color:#777;margin:54px 0 14px}.contact h2{font-size:clamp(60px,9.3vw,142px);line-height:.88;letter-spacing:-.075em;font-weight:550;margin:0 0 55px}.contact>a{font-size:10px;letter-spacing:.15em;border-bottom:1px solid #777;padding-bottom:8px}.contact>a:hover{color:var(--cream);border-color:var(--cream)}footer{display:flex;justify-content:space-between;gap:20px;padding:24px var(--pad);border-top:1px solid var(--line);font-size:10px;color:#66645f}.reveal{opacity:0;transform:translateY(25px);transition:.75s}.reveal.visible{opacity:1;transform:none}.lightbox{position:fixed;inset:0;z-index:1001;background:rgba(0,0,0,.95);display:none;align-items:center;justify-content:center;padding:40px}.lightbox.open{display:flex}.lightbox img{max-width:min(90vw,1000px);max-height:90vh;object-fit:contain}.close{position:absolute;right:25px;top:18px;background:none;border:0;color:white;font-size:42px;cursor:pointer}
+@media(max-width:900px){.site-header{grid-template-columns:1fr 1fr}.site-header nav{display:none}.portfolio-word{font-size:22vw}.portrait{width:min(90vw,760px)}.about,.capabilities,.experience{grid-template-columns:1fr}.section-heading{display:block}.section-heading h2{text-align:left;margin-top:18px}.cap-list article{grid-template-columns:45px 1fr}.cap-list p{grid-column:2}.gallery{grid-template-columns:1fr 1fr}.tile,.tile:nth-child(n){grid-column:span 1}.tile img{min-height:0;aspect-ratio:4/5!important}.case{grid-template-columns:1fr;gap:25px}.case-meta{position:static}.video-grid{grid-template-columns:1fr}.reel-card{max-width:430px}.exp-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.site-header{height:64px}.portfolio-word{font-size:24vw}.portrait{width:105vw;bottom:-3vh}.intro-mini-top{top:9vh}.intro-name{bottom:10vh}.scroll-hint{bottom:4vh}.about,.capabilities,.section,.cases,.experience,.contact{padding-top:82px;padding-bottom:82px}.gallery{grid-template-columns:1fr}.exp-grid{grid-template-columns:1fr}.exp-grid article{min-height:230px}.statement p{font-size:56px}footer{flex-wrap:wrap}}
+
+/* Production/mobile hardening */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%;scroll-padding-top:80px}
+body{min-width:320px;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+img,video{max-width:100%}
+button,a{-webkit-tap-highlight-color:transparent}
+.site-header{padding-left:max(var(--pad),env(safe-area-inset-left));padding-right:max(var(--pad),env(safe-area-inset-right))}
+.intro-sticky{height:100svh;min-height:560px}
+.slider{touch-action:pan-y;overscroll-behavior-x:contain}
+.slides{will-change:transform}
+.slides img{user-select:none;-webkit-user-drag:none}
+.slider-ui button,.close{touch-action:manipulation;min-width:44px;min-height:44px}
+.video-grid video{border-radius:2px}
+.youtube-card video{aspect-ratio:211/90;object-fit:contain}
+.tile:focus-visible,.slider-ui button:focus-visible,.site-header a:focus-visible,.contact>a:focus-visible{outline:2px solid var(--cream);outline-offset:4px}
+@media (hover:none),(pointer:coarse){.cursor{display:none}.tile span{opacity:1;transform:none}.tile:hover img{transform:none}.site-header a:hover{color:inherit}}
+@media(max-width:900px){
+  :root{--pad:clamp(18px,5vw,40px)}
+  .intro-scroll{height:190svh}
+  .intro-sticky{height:100svh;min-height:520px}
+  .portfolio-word{font-size:min(22vw,180px);letter-spacing:-.075em}
+  .portrait{width:min(92vw,720px);max-height:78svh;object-fit:contain;object-position:center bottom}
+  .about{gap:38px}.about-copy p{font-size:17px}
+  .case{padding:58px 0}.case-meta h3{max-width:18ch}
+  .slides img{max-height:82svh}
+  .video-grid{gap:42px}.reel-card{margin-inline:auto;width:min(100%,430px)}
+}
+@media(max-width:600px){
+  html{scroll-padding-top:70px}
+  .site-header{height:60px;padding-top:env(safe-area-inset-top)}
+  .site-header .wordmark{font-size:10px}.contact-link{font-size:10px}
+  .intro-scroll{height:175svh}
+  .intro-sticky{height:100svh;min-height:500px;padding-bottom:env(safe-area-inset-bottom)}
+  .portfolio-word{font-size:clamp(56px,23vw,104px);line-height:.82;letter-spacing:-.065em;max-width:96vw}
+  .portrait{width:min(112vw,640px);bottom:-1svh;max-height:74svh}
+  .intro-mini-top{top:max(8svh,calc(env(safe-area-inset-top) + 28px));font-size:9px}
+  .intro-name{bottom:max(9svh,calc(env(safe-area-inset-bottom) + 34px));font-size:11px;max-width:18ch}
+  .scroll-hint{bottom:max(3.5svh,calc(env(safe-area-inset-bottom) + 16px));font-size:8px}
+  .about,.capabilities,.section,.cases,.experience,.contact{padding-left:max(18px,env(safe-area-inset-left));padding-right:max(18px,env(safe-area-inset-right));padding-top:74px;padding-bottom:74px}
+  .about-title h2{font-size:clamp(44px,15vw,68px)}
+  .lead{font-size:clamp(29px,9.5vw,42px)!important}.about-copy p{font-size:16px;line-height:1.58}
+  .cap-list article{gap:12px 16px;padding:24px 0}.cap-list h3{font-size:clamp(26px,9vw,36px)}.cap-list p{font-size:14px}
+  .section-heading{margin-bottom:34px}.section-heading h2{font-size:clamp(38px,12vw,54px);line-height:.98}
+  .gallery{gap:12px}.tile img{width:100%;aspect-ratio:auto!important;max-height:none;object-fit:contain;background:#111}
+  .tile span{left:10px;bottom:10px;font-size:8px;padding:8px 10px}
+  .case{padding:50px 0}.case-meta h3{font-size:clamp(31px,10vw,44px)}.case-meta p{font-size:14px}
+  .slides img{aspect-ratio:auto;height:auto;max-height:none;object-fit:contain}
+  .slider-ui{justify-content:space-between;padding-top:12px}.slider-ui button{width:48px;height:48px}
+  .statement{padding:70px 18px}.statement p{font-size:clamp(46px,15vw,64px);line-height:.86}.statement .outline{padding-left:5vw}
+  .video-info h3{font-size:20px}.youtube-card video{aspect-ratio:211/90}
+  .experience{gap:36px}.experience h2{font-size:clamp(42px,13vw,58px)}
+  .contact h2{font-size:clamp(52px,15vw,76px);line-height:.92}.contact>p{margin-top:38px}
+  footer{padding-left:max(18px,env(safe-area-inset-left));padding-right:max(18px,env(safe-area-inset-right));padding-bottom:max(24px,env(safe-area-inset-bottom))}
+  .lightbox{padding:18px}.close{right:12px;top:max(10px,env(safe-area-inset-top))}
+}
+@media(max-width:380px){
+  .portfolio-word{font-size:22vw}
+  .portrait{width:118vw}
+  .about-title h2{font-size:42px}.lead{font-size:28px!important}
+  .section-heading h2{font-size:36px}.case-meta h3{font-size:30px}
+  .statement p{font-size:44px}.contact h2{font-size:48px}
+}
+@media(max-height:650px) and (max-width:900px){
+  .portrait{max-height:68svh}.intro-mini-top{top:70px}.intro-name{bottom:58px}.scroll-hint{bottom:18px}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}.slides,.tile img,.site-header{transition:none}.cursor{display:none}
+}
+
+</style></head><body>
+<div class="progress"></div><div class="cursor"></div>
+<header class="site-header"><a class="wordmark" href="#top">RODRIGO LARA</a><nav><a href="#about">Sobre</a><a href="#work">Projetos</a><a href="#cases">Cases</a><a href="#motion">Vídeo</a></nav><a class="contact-link" href="#contact">Contato ↗</a></header>
+<main id="top">
+<section class="intro-scroll" id="intro"><div class="intro-sticky"><div class="intro-mini intro-mini-top">APRESENTAÇÃO CRIATIVA</div><h1 class="portfolio-word">PORTFOLIO</h1><img class="portrait" src="assets/rodrigo-portrait.webp" alt="Rodrigo Lara" width="900" height="1200" fetchpriority="high" decoding="async"><div class="intro-name">Rodrigo Sioli de Rezende<br>Lara</div><div class="scroll-hint">ROLE PARA EXPLORAR <span>↓</span></div></div></section>
+
+<section class="about" id="about"><div class="about-title"><span>01 / SOBRE</span><h2>Rodrigo Lara</h2></div><div class="about-copy"><p class="lead">Onde a arte encontra a estratégia.</p><p>Sou um criativo apaixonado por conectar marcas a pessoas através de experiências visuais impactantes. Com um pé no design, outro na edição de vídeo e a mente no marketing, não crio apenas conteúdo: construo narrativas coerentes que capturam a atenção e transformam ideias abstratas em presença digital sólida.</p><div class="skill-chips"><span>Direção criativa</span><span>Design</span><span>Edição de vídeo</span><span>Marketing digital</span><span>Landing pages</span></div></div></section>
+
+<section class="capabilities"><div class="cap-label">02 / EXPERTISE</div><div class="cap-list"><article><span>01</span><h3>Design & Direção de Arte</h3><p>Criação visual com foco em clareza, consistência, posicionamento e percepção de valor.</p></article><article><span>02</span><h3>Edição de Vídeo</h3><p>Vídeos com estética premium, ritmo, formatos verticais e atenção ao primeiro frame.</p></article><article><span>03</span><h3>Marketing Digital</h3><p>Estratégia de mercado e direção visual trabalhando juntas para fortalecer mensagem e conversão.</p></article><article><span>04</span><h3>Experiências Digitais</h3><p>Landing pages, campanhas e sistemas visuais pensados para funcionar em diferentes formatos.</p></article></div></section>
+
+<section id="work" class="section work"><div class="section-heading"><span>03 / ARTES ESTÁTICAS</span><h2>Campanhas, produto<br>e comunicação de marca.</h2></div><div class="gallery"><button class="tile reveal" data-img="assets/static-01.webp"><img loading="lazy" src="assets/static-01.webp" alt="Projeto de design de Rodrigo Lara"><span>AMPLIAR ↗</span></button><button class="tile reveal" data-img="assets/static-02.webp"><img loading="lazy" src="assets/static-02.webp" alt="Projeto de design de Rodrigo Lara"><span>AMPLIAR ↗</span></button><button class="tile reveal" data-img="assets/static-03.webp"><img loading="lazy" src="assets/static-03.webp" alt="Projeto de design de Rodrigo Lara"><span>AMPLIAR ↗</span></button><button class="tile reveal" data-img="assets/static-04.webp"><img loading="lazy" src="assets/static-04.webp" alt="Projeto de design de Rodrigo Lara"><span>AMPLIAR ↗</span></button><button class="tile reveal" data-img="assets/static-05.webp"><img loading="lazy" src="assets/static-05.webp" alt="Projeto de design de Rodrigo Lara"><span>AMPLIAR ↗</span></button><button class="tile reveal" data-img="assets/static-06.webp"><img loading="lazy" src="assets/static-06.webp" alt="Projeto de design de Rodrigo Lara"><span>AMPLIAR ↗</span></button><button class="tile reveal" data-img="assets/static-07.webp"><img loading="lazy" src="assets/static-07.webp" alt="Projeto de design de Rodrigo Lara"><span>AMPLIAR ↗</span></button><button class="tile reveal" data-img="assets/static-08.webp"><img loading="lazy" src="assets/static-08.webp" alt="Projeto de design de Rodrigo Lara"><span>AMPLIAR ↗</span></button></div></section>
+
+<section id="cases" class="cases"><div class="section-heading"><span>04 / CARROSSÉIS</span><h2>Narrativa visual<br>em sequência.</h2></div><article class="case reveal"><div class="case-meta"><span>CASE 01</span><h3>Personalização na saúde</h3><p>Day Pharma · Conteúdo institucional</p><small>Editorial / Saúde personalizada</small></div><div class="slider" data-slider><div class="slides"><img loading="lazy" src="assets/personalizacao-01.webp" alt="Personalização na saúde"><img loading="lazy" src="assets/personalizacao-02.webp" alt="Personalização na saúde"><img loading="lazy" src="assets/personalizacao-03.webp" alt="Personalização na saúde"><img loading="lazy" src="assets/personalizacao-04.webp" alt="Personalização na saúde"></div><div class="slider-ui"><button class="prev" aria-label="Anterior">←</button><span class="count">01</span><button class="next" aria-label="Próximo">→</button></div></div></article><article class="case reveal"><div class="case-meta"><span>CASE 02</span><h3>Cynatine</h3><p>Day Pharma · Produto & Beauty</p><small>Beauty / Produto / Evidência</small></div><div class="slider" data-slider><div class="slides"><img loading="lazy" src="assets/cynatine-01.webp" alt="Cynatine"><img loading="lazy" src="assets/cynatine-02.webp" alt="Cynatine"><img loading="lazy" src="assets/cynatine-03.webp" alt="Cynatine"><img loading="lazy" src="assets/cynatine-04.webp" alt="Cynatine"><img loading="lazy" src="assets/cynatine-05.webp" alt="Cynatine"></div><div class="slider-ui"><button class="prev" aria-label="Anterior">←</button><span class="count">01</span><button class="next" aria-label="Próximo">→</button></div></div></article><article class="case reveal"><div class="case-meta"><span>CASE 03</span><h3>Excelência ampola por ampola</h3><p>Day Pharma · Linha de injetáveis</p><small>Institucional / Tecnologia / Qualidade</small></div><div class="slider" data-slider><div class="slides"><img loading="lazy" src="assets/injetaveis-01.webp" alt="Excelência ampola por ampola"><img loading="lazy" src="assets/injetaveis-02.webp" alt="Excelência ampola por ampola"><img loading="lazy" src="assets/injetaveis-03.webp" alt="Excelência ampola por ampola"><img loading="lazy" src="assets/injetaveis-04.webp" alt="Excelência ampola por ampola"></div><div class="slider-ui"><button class="prev" aria-label="Anterior">←</button><span class="count">01</span><button class="next" aria-label="Próximo">→</button></div></div></article><article class="case reveal"><div class="case-meta"><span>CASE 04</span><h3>Peptídeos</h3><p>Day Pharma · DileuPept + Cynatine</p><small>Educacional / Produto / Performance</small></div><div class="slider" data-slider><div class="slides"><img loading="lazy" src="assets/peptideos-01.webp" alt="Peptídeos"><img loading="lazy" src="assets/peptideos-02.webp" alt="Peptídeos"><img loading="lazy" src="assets/peptideos-03.webp" alt="Peptídeos"><img loading="lazy" src="assets/peptideos-04.webp" alt="Peptídeos"><img loading="lazy" src="assets/peptideos-05.webp" alt="Peptídeos"></div><div class="slider-ui"><button class="prev" aria-label="Anterior">←</button><span class="count">01</span><button class="next" aria-label="Próximo">→</button></div></div></article></section>
+
+<section class="statement"><p>IDEIA</p><p class="outline">+ IMAGEM</p><p>+ ESTRATÉGIA</p></section>
+
+<section id="motion" class="section motion"><div class="section-heading"><span>05 / MOTION & VÍDEO</span><h2>Conteúdo em movimento.</h2></div><div class="video-grid"><div class="reel-card reveal"><video controls playsinline preload="metadata" poster="assets/reels-poster.jpg"><source src="assets/reels.mp4" type="video/mp4"></video><div class="video-info"><span>INSTAGRAM / REELS</span><h3>Conteúdo vertical</h3></div></div><div class="youtube-card reveal"><video controls playsinline preload="metadata" poster="assets/youtube-poster.jpg"><source src="assets/youtube.mp4" type="video/mp4"></video><div class="video-info"><span>YOUTUBE / WIDESCREEN</span><h3>Conteúdo audiovisual</h3></div></div></div></section>
+
+<section class="experience"><div><span>06 / OUTRAS EXPERIÊNCIAS</span><h2>Do social ao digital.</h2></div><div class="exp-grid"><article><small>REAL ESTATE</small><h3>Imóveis Vila Real</h3><p>Campanhas digitais e séries de vídeos para empreendimentos de luxo, com roteiros de walkthrough e direcionamento de captação cinematográfica.</p></article><article><small>FOOD BRAND</small><h3>Don Juan Empanadas</h3><p>Construção de comunicação visual para uma marca de alimentação, explorando produto e presença em redes sociais.</p></article><article><small>WEB</small><h3>Landing Pages</h3><p>Criação de experiências de página com foco em apresentação visual, hierarquia de conteúdo e conversão.</p></article></div></section>
+
+<section id="contact" class="contact"><span>07 / CONTATO</span><p>Tem um projeto em mente?</p><h2>Vamos criar algo<br>que mereça atenção.</h2><a href="mailto:rodrigosrlara50@gmail.com">INICIAR CONVERSA ↗</a></section>
+</main><footer><span>© 2026 — Rodrigo Lara</span><span>Creative Portfolio</span><a href="#top">Voltar ao topo ↑</a></footer>
+<div class="lightbox" aria-hidden="true"><button class="close">×</button><img alt="Visualização ampliada"></div><script>
+
+const prog=document.querySelector('.progress');
+const cursor=document.querySelector('.cursor');
+const intro=document.querySelector('.intro-scroll');
+const sticky=document.querySelector('.intro-sticky');
+const word=document.querySelector('.portfolio-word');
+const portrait=document.querySelector('.portrait');
+const mini=document.querySelector('.intro-mini');
+const nameEl=document.querySelector('.intro-name');
+const header=document.querySelector('.site-header');
+function clamp(v,a,b){return Math.max(a,Math.min(b,v))}
+function onScroll(){
+  const max=document.documentElement.scrollHeight-innerHeight;
+  prog.style.width=(scrollY/max*100)+'%';
+  const r=intro.getBoundingClientRect();
+  const travel=intro.offsetHeight-innerHeight;
+  const p=clamp((-r.top)/travel,0,1);
+  const eased=1-Math.pow(1-p,3);
+  const y=-8*eased;
+  const s=1-(.24*eased);
+  word.style.transform=`translate3d(0,${y}vh,0) scale(${s})`;
+  portrait.style.opacity=clamp((p-.12)/.42,0,1);
+  portrait.style.transform=`translateX(-50%) translateY(${35-35*eased}px) scale(${.94+.06*eased})`;
+  mini.style.opacity=nameEl.style.opacity=clamp((p-.42)/.25,0,1);
+  sticky.classList.toggle('final',p>.72);
+  header.classList.toggle('show',p>.9);
+}
+addEventListener('scroll',onScroll,{passive:true});onScroll();
+addEventListener('pointermove',e=>{cursor.style.left=e.clientX+'px';cursor.style.top=e.clientY+'px'});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.1});document.querySelectorAll('.reveal').forEach(e=>io.observe(e));
+document.querySelectorAll('[data-slider]').forEach(sl=>{let i=0;const tr=sl.querySelector('.slides'),imgs=[...tr.children],count=sl.querySelector('.count');const draw=()=>{tr.style.transform=`translateX(-${i*100}%)`;count.textContent=String(i+1).padStart(2,'0')+' / '+String(imgs.length).padStart(2,'0')};sl.querySelector('.next').onclick=()=>{i=(i+1)%imgs.length;draw()};sl.querySelector('.prev').onclick=()=>{i=(i-1+imgs.length)%imgs.length;draw()};let x=0;tr.addEventListener('pointerdown',e=>x=e.clientX);tr.addEventListener('pointerup',e=>{if(Math.abs(e.clientX-x)>45){i=(i+(e.clientX<x?1:-1)+imgs.length)%imgs.length;draw()}});draw()});
+const lb=document.querySelector('.lightbox'),lbi=lb.querySelector('img');document.querySelectorAll('.tile').forEach(b=>b.onclick=()=>{lbi.src=b.dataset.img;lb.classList.add('open');lb.setAttribute('aria-hidden','false')});const close=()=>{lb.classList.remove('open');lb.setAttribute('aria-hidden','true')};lb.querySelector('.close').onclick=close;lb.onclick=e=>{if(e.target===lb)close()};addEventListener('keydown',e=>{if(e.key==='Escape')close()});
+
+// Mobile/production refinements
+const reduceMotion=matchMedia('(prefers-reduced-motion: reduce)').matches;
+if(reduceMotion){document.querySelectorAll('.reveal').forEach(el=>el.classList.add('visible'));}
+document.querySelectorAll('video').forEach(v=>{
+  v.addEventListener('play',()=>document.querySelectorAll('video').forEach(other=>{if(other!==v&&!other.paused) other.pause();}));
+});
+
+</script></body></html>
